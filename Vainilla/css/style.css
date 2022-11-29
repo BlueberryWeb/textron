@@ -1,0 +1,219 @@
+html,body {
+    width: 100% !important;
+    overflow-x: hidden;
+    background-color: #0000;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+.a_none_style {
+    text-decoration: none;
+}
+/* TYPOGRAPHY */
+@font-face {
+    font-family: 'Helvetica Nue Ligth';
+    src: url("fonts/HelveticaNeue-Light.ttf");
+}
+@font-face {
+    font-family: 'Open Sans Extra Bold';
+    src: url("fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url("fonts/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+
+.oLight{
+    font-family: 'Open Sans Light';
+}
+.oRegular{
+    font-family: 'Open Sans Regular';
+}
+.oExtraBold{
+    font-family: 'Open Sans Extra Bold';
+}
+.hLight{
+    font-family: 'Helvetica Nue Ligth';
+} 
+/* ENDS TYPOGRAPHY */
+/* VIDEOS */
+.vid-index{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height:150vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+}
+.vid-index header{
+    background-color: linear-gradient( top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vid-index video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.vid-belive{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height:80vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+}
+.vid-belive video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.vid-brands{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height:80vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+}
+.vid-brands video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+/* ENDSVIDEOS */
+/* BUTTONS */
+.btn-login{
+    background: rgb(100,193,186);
+    background: linear-gradient(152deg, rgba(100,193,186,1) 0%, rgba(0,34,80,1) 48%, rgba(0,34,80,1) 100%);
+    border: none;
+    border-radius: 0;
+    width: 135px;
+}
+.btn-login h6{
+    margin-top: 0.2rem;
+}
+/* ENDS BUTTONS */
+/* ICONS */
+.icon-login{
+    width: 18px;
+}
+.logo-isc{
+    width: 350px;
+}
+.logo-textron{
+    width: 180px;
+}
+.line-index{
+    width: 70%;
+}
+.logo-isc-footer{
+    width: 220px;
+}
+/* ENDS ICONS*/
+/* TEXTS */
+.txt-index{
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    text-align: center;
+    align-items: center;
+    z-index: 10000;
+}
+.txt-index-2{
+    position: absolute;
+    top: 57%;
+    left: 5%;
+    z-index: 10000;
+    width: 100%;
+}
+.txt-what-is p{
+    line-height: 70%;
+    font-size: 14px;
+}
+.txt-what-we {
+    margin-top: 11rem;
+}
+.txt-what-we p{
+    line-height: 70%;
+    font-size: 14px;
+}
+.txt-belive-that{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    text-align: center;
+    align-items: center;
+    z-index: 10000;
+}
+.txt-difference p{
+    line-height: 60%;
+    font-family: 'Helvetica Nue Ligth';
+    font-size: 17px;
+}
+.space-text{
+    letter-spacing: 0.9rem;
+}
+.footer h6{
+    font-family: 'Helvetica Nue Ligth';
+}
+/* ENDS TEXTS */
+/* EFFECT HOVER IMAGES */
+.brands-hover {
+    position: relative;
+    height: 470px ;
+    width: 300px;
+    float: left;
+  }
+  
+  .brands-hover img {
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .brands-hover img.top:hover {
+    opacity: 0;
+  }
+/* ENDS EFFECT HOVER IMAGES */
