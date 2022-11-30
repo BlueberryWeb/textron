@@ -499,3 +499,30 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-family: 'Open Sans Extra Bold';
 }
 /* ENDS VIEW LOGIN */
+@media only screen and (min-width: 1600px) and (max-width: 2000px){
+    .brands{
+        position: relative;
+        width: 380px;
+        height: 470px ;
+        margin-bottom: 150px;
+    }
+    .logo-link{
+        position: absolute;
+        bottom: 20%;
+        left: 20%;
+    }
+    .logo{
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+    }
+    .logo img{
+        width: 183px;
+        height: 43px;
+    }
+    .logo-link img{
+        width: 182px;
+        height: 43px;
+    }
+
+}
