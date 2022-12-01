@@ -1,111 +1,344 @@
-<template >
-    <div class="vid-index">
-        <header class="">
-            <!--TERMINA MENU CELULARES-->
-            <div class="container-fluid menu pt-3">
-              <div class="container-fluid">
-                <div class="row pt-2">
-                  <div class="col-12 col-lg-1 col-sm-12 col-md-12 justify-content-center">
-                    <a href="index.html" class="a_none_style text-white">
-                      <h1 class="DAGGERSQUARE">ISC</h1>
-                    </a>
-                  </div>
-                  <div class="col-12 col-lg-9 col-sm-12 col-md-12"></div>
-                  <div class="col-12 col-lg-2 col-sm-12 col-md-12 pt-1">
-                    <div class="text-end">
-                      <a class="btn btn-primary btn-login" href="login.html">
-                        <img src="img/icono-login.png" alt="Login" class="img-fluid float-start ms-3 icon-login"/>
-                        <h6 class="oRegular">Login </h6>
-                      </a>
-                    </div>
-                  </div>
+<template>
+    <div class="header">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1">
+                    <img :src="logoISC" alt="ISC INTEGRATED SUPPLY CHAIN" class="img-fluid"/>
                 </div>
-              </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1">
+                    <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid"/>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                    <img :src="photoProfile" alt="ISC" class="img-fluid float-start icon-user"/>
+                    <h6 class="oRegular h6 pt-2">Andrew Miller</h6>
+                </div>
             </div>
-          </header>
-          <div class="txt-index">
-            <div class="text-center">
-                <h1 class="space-text oRegular h4">WELCOME TO</h1>
-                <img src="img/logo-textron-blue.png" alt="TEXTRON" class="img-fluid logo-textron my-4"/>
-            </div>
-            <div class="text-center">
-                <img src="img/logo-ISC-white.png" alt="ISC: INTEGRATED SUPPLY CHAIN" class="img-fluid logo-isc"/>
-            </div>
-          </div>
-          <div class="txt-index-2">
+        </div>
+    </div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>
+                <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid logo-artic"/>
+            </li>
+            <li class="menu-login active-tit">
+                <a href="#" >Home</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">Business Updates</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">Success Stories</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">Master Plan</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">Training Plan</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">Lessons Learned</a>
+            </li>
+            <li class="border- menu-login">
+                <a href="#" target="_blank">Sharepoints</a>
+            </li>
+            <li class="menu-login">
+                <a href="#" target="_blank">My Account</a>
+            </li>
+            <li class="border- menu-login">
+                <a href="#" target="_blank">Log Out</a>
+            </li>
+            <li class="footer-welcome">
+                <img :src="logoTextron" alt="TEXTRON SPECIALIZED VEHICLES" class="img-fluid logo-textron-welcome mb-3">
+                <p class="oRegular"> © 2022 TEXTRON </p>
+                <p class="oRegular">SPECIALIZED VEHICLES,</p>
+                <p class="oRegular">All Rights Reserved</p>
+                <div class="mt-3">
+                    <a href="" class="a_none_style">
+                        <h6 class="hLight">Privacy Policy</h6>
+                    </a>
+                    <a href="" class="a_none_style">
+                        <h6 class="hLight">Terms & Conditions</h6>
+                    </a>
+                    <a href="" class="a_none_style">
+                        <h6 class="hLight">Legal CA Transparency</h6>
+                    </a>
+                    <a href="">
+                        <img :src="bbLogo" alt="Materialized by Blueberry" class="img-fluid bb-logo-welcome"/>
+                    </a>
+                </div>
+            </li>
+            <li class="footer-welcome"></li>
+            <li class="footer-welcome"></li>
+        </ul>
+    </div>
+    <div id='center' class="main center">
+        <div class="bg-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-10">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class="mb-3 oRegular txt-what-is">
-                                    <h4 class="oExtraBold h2">What is</h4>
-                                    <h4 class="oRegular h2 mb-3">ISC system?</h4>
-                                    <p>Textron ISC is an executive system for the </p>
-                                    <p>management, administration and integration of </p>
-                                    <p>projects focused on the supply chain of the “Textron </p>
-                                    <p>Industrial” division through its Driving Technology </p>
-                                    <p>Forward line of “Textron Specialized Vehicles”.</p>
-                                </div>
-                                <div class="text-end">
-                                    <img src="img/line-index.png" alt="ISC" class="img-fluid line-index"/>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class="txt-what-we">
-                                    <h4 class="oExtraBold h2">What we are</h4>
-                                    <h4 class="oRegular h2 mb-3">looking for?</h4>
-                                    <p>This ISC system has the objective of integrating and </p>
-                                    <p>standardizing all the projects of our brands belonging</p>
-                                    <p>to “Textron Specialized Vehicles”, as well as serving as a</p>
-                                    <p>communication channel between all of them to achieve</p>
-                                    <p>a more efficient standardization.</p>
-                                </div>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="text-center txt-welcome">
+                            <h1 class="oLight display-5">Hello <b class="oExtraBold">Andrew Miller</b></h1>
+                            <h1 class="space-text oRegular h2">WELCOME TO</h1>
+                            <img :src="logoISC" alt="INTEGRATED SUPPLY CHAIN" class="img-fluid logo-isc-welcome">
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
                 </div>
+                
+                
             </div>
-          </div>
-        <video src="video/car-main.mp4" muted loop autoplay></video>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                    <div class="d-flex">
+                        <div class="ms-5 me-5">
+                            <img :src="ezgoLogo" alt="EZGO" class="img-fluid logo-1"/>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <img :src="cushmanLogo" alt="CUSHMAN" class="img-fluid logo-2"/>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid logo-3"/>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <img :src="jacobsenLogo" alt="JACOBSEN" class="img-fluid logo-4"/>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <img :src="igseLogo" alt="TEXTRON GSE" class="img-fluid logo-5"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+            </div>
+        </div>
     </div>
 </template>
-<style>
-</style>
+
 <script>
-// VIDEOS 
-    import vidIndex from 'ASSETS/video/car-main'
-//IMAGES
-    import line from 'ASSETS/images/line-index'
+// IMAGES
     import logoISC from 'ASSETS/images/logo-ISC-white'
-    import logoTextron from 'ASSETS/images/logo-textron-blue'
-    import iconLogin from 'ASSETS/images/icono-login'
-
-
-// COMPONENTS
-    import footer from 'COMPONENTS/footer'
+    import logoArtic from 'ASSETS/images/logo-artic'
+    import photoProfile from 'ASSETS/images/andrew-user'
+    import logoTextron from 'ASSETS/images/textron-logo-2'
+    import bbLogo from 'ASSETS/images/materialized-blueberry'
+    import ezgoLogo from 'ASSETS/images/logo-ezgo'
+    import cushmanLogo from 'ASSETS/images/logo-cushman'
+    import jacobsenLogo from 'ASSETS/images/logo-jacobsen'
+    import gseLogo from 'ASSETS/images/logo-gse'
+    import bgWelcome from 'ASSETS/images/bg-artic'
     export default{
-        components: {
-            'footer' : footer
-        },
-        setup() {
+        setup (){
             return{
-                vidIndex, 
-                line, 
                 logoISC,
-                logoTextron, 
-                iconLogin
+                logoArtic,
+                photoProfile,
+                logoTextron,
+                bbLogo,
+                ezgoLogo,
+                cushmanLogo,
+                jacobsenLogo,
+                gseLogo,
+                bgWelcome
             }
         },
-        methods: {
-            redirect(name){
-                windows.scrollTo( 0 , 0 )
-                this.$router.push({
-                    name: name
-                })
-            }
-        }
     }
+
+
+
+    
 </script>
+<style scoped lang="css">
+    .a_none_style {
+        text-decoration: none;
+    }
+    .logo-textron-welcome{
+        width: 120px;
+    }
+    .bb-logo-welcome{
+        width: 150px;
+    }
+    .icon-user{
+        width: 40px;
+        margin-right: 1rem;
+    }
+    .logo-isc-welcome{
+        width: 260px;
+    }
+    .logo-artic{
+        width: 100px;
+        margin-left: 3rem;
+    }
+    .header {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        background: rgb(89,154,48);
+        background: linear-gradient(180deg, rgba(89,154,48,1) 0%, rgba(89,154,48,1) 48%, rgba(89,154,48,1) 100%);
+        height: 70px!important;
+        overflow: hidden;
+        z-index: 10;
+    }
+    .bg-main{
+        background-image: url('/assets/images/bg-artic.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        display: block;
+    }
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        width: 250px;
+        transform: translateX(-250px);
+        transition: transform 250ms ease-in-out;
+        background: #000000;
+        overflow: scroll;
+    }
+    .sidebarMenuInner{
+        margin:0;
+        padding:0;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    .sidebarMenuInner li{
+        list-style: none;
+        color: #fff;
+        font-weight: normal;
+        font-family: 'Open Sans Regular';
+        padding: 20px;
+        cursor: pointer;
+    }
+    .border-{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    .sidebarMenuInner li span{
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+    .sidebarMenuInner li a{
+        font-family: 'Open Sans Regular';
+        color: #fff;
+        font-weight: normal;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: translateX(0);
+    }
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 22px;
+        left: 45px;
+        height: 22px;
+        width: 22px;
+    }
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 1px;
+        margin-top: 2px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 6px;
+        margin-bottom: 2px;
+    }
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    } 
+    .footer-welcome p{
+        font-size: 12px;
+        line-height: 20%;
+    }
+    .footer-welcome h6{
+        font-size: 12px;
+    }
+    .active-tit{
+        background: #212121;
+        font-family: 'Open Sans Extra Bold';
+    }
+    .txt-welcome{
+        margin-top: 10rem;
+    }
+    .space-text{
+        letter-spacing: 0.9rem;
+    }
+    .logo-1{
+        width: 120px;
+    }
+    .logo-2{
+        width: 150px;
+    }
+    .logo-3{
+        width: 100px;
+    }
+    .logo-4{
+        width: 120px;
+    }
+    .logo-5{
+        width: 150px;
+    }
+</style>

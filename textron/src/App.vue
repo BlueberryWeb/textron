@@ -12,8 +12,12 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/welcome">Welcome</RouterLink>
+        <RouterLink to="/index">Index</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
       </nav>
     </div>
+    
   </header>
 
   <RouterView />
@@ -57,7 +61,7 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: block;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
@@ -67,7 +71,7 @@ nav a:first-of-type {
   }
 
   header .wrapper {
-    display: flex;
+    display: block;
     place-items: flex-start;
     flex-wrap: wrap;
   }

@@ -89,7 +89,7 @@
 <script>
     import bb from 'ASSETS/images/materialized-blueberry'
     import textronFooter from 'ASSETS/images/textron-logo-2'
-    import logoISC from 'ASSET/images/logo-ISC-white'
+    import logoISC from 'ASSETS/images/logo-ISC-white'
 
     export default{
         setup(){
