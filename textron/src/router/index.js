@@ -31,6 +31,27 @@ const router = createRouter({
       path: '/index',
       name: 'index',
       component: () => import('../views/Home.vue')
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/Blog.vue')
+    }
+    ,
+    {
+      path: '/training',
+      name: 'training',
+      component: () => import('../views/Training.vue')
+    },
+    {
+      path: '/post',
+      name: 'post',
+      component: () => import('../views/Post.vue')
+    },
+    {
+      path: '/feed',
+      name: 'feed',
+      component: () => import('../views/Feed.vue')
     }
     
   ]

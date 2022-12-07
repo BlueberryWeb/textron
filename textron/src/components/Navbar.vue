@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-1">
-                    <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid"/>
+                    <img :src="logoCompany" alt="ARTIC CAT" class="img-fluid"/>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2">
@@ -26,7 +26,7 @@
     <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
             <li>
-                <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid logo-artic"/>
+                <img :src="logoCompany" alt="ARTIC CAT" class="img-fluid logo-artic"/>
             </li>
             <li class="menu-login active-tit">
                 <a href="#" >Home</a>
@@ -56,7 +56,7 @@
                 <a href="#">Log Out</a>
             </li>
             <li class="footer-welcome">
-                <img :src="logoTextron" alt="TEXTRON SPECIALIZED VEHICLES" class="img-fluid logo-textron-welcome mb-3">
+                <img :src="textronLogo" alt="TEXTRON SPECIALIZED VEHICLES" class="img-fluid logo-textron-welcome mb-3">
                 <p class="oRegular"> © 2022 TEXTRON </p>
                 <p class="oRegular">SPECIALIZED VEHICLES,</p>
                 <p class="oRegular">All Rights Reserved</p>
@@ -79,106 +79,36 @@
             <li class="footer-welcome"></li>
         </ul>
     </div>
-    <div id='center' class="main center">
-        <div class="bg-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                        <div class="text-center txt-welcome">
-                            <h1 class="oLight display-5">Hello <b class="oExtraBold">Andrew Miller</b></h1>
-                            <h1 class="space-text oRegular h2">WELCOME TO</h1>
-                            <img :src="logoISC" alt="INTEGRATED SUPPLY CHAIN" class="img-fluid logo-isc-welcome">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
-                </div>
-                
-                
-            </div>
-        </div>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-10">
-                    <div class="d-flex">
-                        <div class="ms-5 me-5">
-                            <img :src="ezgoLogo" alt="EZGO" class="img-fluid logo-1"/>
-                        </div>
-                        <div class="ms-5 me-5">
-                            <img :src="cushmanLogo" alt="CUSHMAN" class="img-fluid logo-2"/>
-                        </div>
-                        <div class="ms-5 me-5">
-                            <img :src="logoArtic" alt="ARTIC CAT" class="img-fluid logo-3"/>
-                        </div>
-                        <div class="ms-5 me-5">
-                            <img :src="jacobsenLogo" alt="JACOBSEN" class="img-fluid logo-4"/>
-                        </div>
-                        <div class="ms-5 me-5">
-                            <img :src="igseLogo" alt="TEXTRON GSE" class="img-fluid logo-5"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
-            </div>
-        </div>
-    </div>
 </template>
-
 <script>
-// IMAGES
-    import logoISC from 'ASSETS/images/logo-ISC-white'
-    import logoArtic from 'ASSETS/images/logo-artic'
-    import photoProfile from 'ASSETS/images/andrew-user'
-    import logoTextron from 'ASSETS/images/textron-logo-2'
+//IMAGES
+    import textronLogo from 'ASSETS/images/img/textron-logo-2'
     import bbLogo from 'ASSETS/images/materialized-blueberry'
-    import ezgoLogo from 'ASSETS/images/logo-ezgo'
-    import cushmanLogo from 'ASSETS/images/logo-cushman'
-    import jacobsenLogo from 'ASSETS/images/logo-jacobsen'
-    import gseLogo from 'ASSETS/images/logo-gse'
-    import bgWelcome from 'ASSETS/images/bg-artic'
+    import logoCompany from 'ASSETS/images/logo-artic'
+    import photoProfile from 'ASSETS/images/andrew-user'
+    import logoISC from 'ASSETS/images/logo-ISC-white'
+
     export default{
-        setup (){
+        setup(){
             return{
-                logoISC,
-                logoArtic,
-                photoProfile,
-                logoTextron,
+                textronLogo,
                 bbLogo,
-                ezgoLogo,
-                cushmanLogo,
-                jacobsenLogo,
-                gseLogo,
-                bgWelcome
+                logoCompany,
+                photoProfile,
+                logoISC
             }
         },
+        methods: {
+            redirect(name){
+                this.$router.push({
+                    name:name
+                })
+            }
+        }
     }
 
-
-
-    
 </script>
 <style scoped lang="css">
-    .a_none_style {
-        text-decoration: none;
-    }
-    .logo-textron-welcome{
-        width: 120px;
-    }
-    .bb-logo-welcome{
-        width: 150px;
-    }
-    .icon-user{
-        width: 40px;
-        margin-right: 1rem;
-    }
-    .logo-isc-welcome{
-        width: 260px;
-    }
-    .logo-artic{
-        width: 100px;
-        margin-left: 3rem;
-    }
     .header {
         display: block;
         margin: 0 auto;
@@ -192,7 +122,7 @@
         z-index: 10;
     }
     .bg-main{
-        background-image: url('/assets/images/bg-artic.png');
+        background-image: url('../img/bg-artic.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -320,25 +250,21 @@
         background: #212121;
         font-family: 'Open Sans Extra Bold';
     }
-    .txt-welcome{
-        margin-top: 10rem;
+    .icon-user{
+        width: 40px;
+        margin-right: 1rem;
     }
-    .space-text{
-        letter-spacing: 0.9rem;
-    }
-    .logo-1{
-        width: 120px;
-    }
-    .logo-2{
-        width: 150px;
-    }
-    .logo-3{
+    .logo-artic{
         width: 100px;
+        margin-left: 3rem;
     }
-    .logo-4{
+    .logo-textron-welcome{
         width: 120px;
     }
-    .logo-5{
+    .bb-logo-welcome{
         width: 150px;
+    }
+    .a_none_style {
+        text-decoration: none;
     }
 </style>
