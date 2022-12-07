@@ -1,6 +1,6 @@
 <template>
     <div id='center' class="main center">
-        <div class="bg-training">
+        <div class="bg-training" :style="bgTraining">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
@@ -458,6 +458,7 @@
     import prueba2 from 'ASSETS/images/blog-cushman'
     import prueba1 from 'ASSETS/images/blog-artic'
     import iconsearch from 'ASSETS/images/icon-search'
+
     export default{
         setup(){
             return{
@@ -483,12 +484,16 @@
                     name:name
                 })
             }
-        }
+        },
+        data() {
+            return { bgTraining: { backgroundImage: `url('${bgTraining}')` } };
+        },
     }
+    
 </script>
 <style scoped>
     .bg-training{
-        background-image: url('../img/bg-training.png');
+        background-image: url('~@/assets/images/bg-training.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

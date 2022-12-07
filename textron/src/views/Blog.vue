@@ -100,7 +100,7 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                 <div class="d-flex">
                                     <div class="me-3">
-                                        <select class="form-select filters-select oRegular" aria-label="Default select example">
+                                        <select class="form-select filters-select oRegular" aria-label="Default select example" :style="arrowDown">
                                             <option selected>Categories</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -108,7 +108,7 @@
                                         </select>
                                     </div>
                                     <div class="">
-                                        <select class="form-select filters-select oRegular" aria-label="Default select example">
+                                        <select class="form-select filters-select oRegular" aria-label="Default select example" :style="arrowDown">
                                             <option selected>Company</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -128,7 +128,7 @@
                                 </form>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-2">
-                                <select class="form-select filters-select oRegular" aria-label="Default select example">
+                                <select class="form-select filters-select oRegular" aria-label="Default select example" :style="arrowDown">
                                     <option selected>Sort by</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -574,7 +574,7 @@
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                     <label for="company" class="form-label">Company:</label>
-                                                    <select class="form-select company-select oItalic" aria-label="Default select example">
+                                                    <select class="form-select company-select oItalic" aria-label="Default select example" :style="arrowDown">
                                                         <option selected>Choose an option</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
@@ -583,7 +583,7 @@
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                     <label for="category" class="form-label">Category:</label>
-                                                    <select class="form-select category-select oItalic" aria-label="Default select example">
+                                                    <select class="form-select category-select oItalic" aria-label="Default select example" :style="arrowDown">
                                                         <option selected>Choose an option</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
@@ -651,6 +651,7 @@
     import iconsearch from 'ASSETS/images/icon-search'
     import prueba1 from 'ASSETS/images/blog-artic'
     import prueba2 from 'ASSETS/images/blog-cushman'
+    import arrowDown from 'ASSETS/images/arrow-down-w'
     import prueba3 from 'ASSETS/images/blog-textron-primera'
     import prueba4 from 'ASSETS/images/blog-artic-segunda'
     import prueba5 from 'ASSETS/images/blog-cushman-segunda'
@@ -687,7 +688,10 @@
                     name:name
                 })
             }
-        }
+        },
+        data() {
+            return { arrowDown: { backgroundImage: `url('${arrowDown}')` } };
+        },
     }
 </script>
 <style scoped lang="css">
@@ -901,7 +905,7 @@
         border: transparent;
         text-align: center;
         width: 150px;
-        background-image: url('../img/arrow-down-w.png');
+        background-image: url('~@/assets/images/arrow-down-w.png');
     }
     .input-search{
         border-radius: 0;

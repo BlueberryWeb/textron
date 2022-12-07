@@ -60,7 +60,7 @@
                                     <h3 class="oRegular h4"><b class="oExtraBold">Last</b> Success Stories</h3>    
                                 </div>
                                 <div class="ms-4">
-                                    <select class="form-select filter-select-favorites" aria-label="Default select example">
+                                    <select class="form-select filter-select-favorites" aria-label="Default select example" :style="arrowDown">
                                         <option selected>Company</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -68,7 +68,7 @@
                                     </select>
                                 </div>
                                 <div class="">
-                                    <select class="form-select filter-select-favorites" aria-label="Default select example">
+                                    <select class="form-select filter-select-favorites" aria-label="Default select example" :style="arrowDown">
                                         <option selected>Sort by</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -172,7 +172,7 @@
                                     <h3 class="oRegular h4"><b class="oExtraBold">Favorite</b> Success Stories</h3>    
                                 </div>
                                 <div class="ms-4">
-                                    <select class="form-select filter-select-favorites" aria-label="Default select example">
+                                    <select class="form-select filter-select-favorites" aria-label="Default select example" :style="arrowDown">
                                         <option selected>Company</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -180,7 +180,7 @@
                                     </select>
                                 </div>
                                 <div class="">
-                                    <select class="form-select filter-select-favorites" aria-label="Default select example">
+                                    <select class="form-select filter-select-favorites" aria-label="Default select example" :style="arrowDown">
                                         <option selected>Sort by</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -346,6 +346,7 @@
     import logoTextronLogistic from 'ASSETS/images/logo-textron-logistic'
     import starFav from 'ASSETS/images/star-favorites'
     import starSuccess from 'ASSETS/images/star-last-success'
+    import arrowDown from 'ASSETS/images/arrow-down-w'
     import paperclip from 'ASSETS/images/paperclip'
     import prueba4 from 'ASSETS/images/blog-artic-segunda'
     import photoProfile from 'ASSETS/images/andrew-user'
@@ -378,7 +379,10 @@
                     name:name
                 })
             }
-        }
+        },
+        data() {
+            return { arrowDown: { backgroundImage: `url('${arrowDown}')` } };
+        },
     }
 </script>
 <style scoped>
@@ -455,7 +459,7 @@
         border: transparent;
         font-family: 'Open Sans Regular';
         text-align: center;
-        background-image: url('../img/arrow-down-w.png');
+        background-image: url('~@/assets/images/arrow-down-w.png');
         
     }
     .star-favorite{

@@ -80,7 +80,7 @@
         </ul>
     </div>
     <div id='center' class="main center">
-        <div class="bg-main">
+        <div class="bg-main" :style="bgWelcome">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
@@ -152,6 +152,9 @@
                 bgWelcome
             }
         },
+        data() {
+            return { bgWelcome: { backgroundImage: `url('${bgWelcome}')` } };
+        },
     }
 
 
@@ -192,7 +195,7 @@
         z-index: 10;
     }
     .bg-main{
-        background-image: url('/assets/images/bg-artic.png');
+        background-image: url('~@/assets/images/bg-artic.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
