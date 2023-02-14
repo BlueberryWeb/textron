@@ -314,9 +314,6 @@ body{
 .forget-pass h6{
     font-size: 14px;
 }
-.txt-welcome{
-    margin-top: 10rem;
-}
 /* ENDS TEXTS */
 /* EFFECT HOVER IMAGES */
 .brands{
@@ -385,7 +382,7 @@ body{
     background: linear-gradient(180deg, rgba(89,154,48,1) 0%, rgba(89,154,48,1) 48%, rgba(89,154,48,1) 100%);
     height: 70px!important;
     overflow: hidden;
-    z-index: 10;
+    z-index: 100;
 }
 .bg-main{
     background-image: url('../img/bg-artic.png');
@@ -408,6 +405,7 @@ body{
     transition: transform 250ms ease-in-out;
     background: #000000;
     overflow: scroll;
+    z-index: 100;
 }
 .sidebarMenuInner{
     margin:0;
@@ -992,6 +990,182 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .card-body img{
     width: 90px;
 }
+/**************************
+VIDEO DE 842PX
+***************************/
+.showcase{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 842px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.txt-video-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: calc(-50%, -50%);
+}
+/**************************
+VIDEO DE 352PX 
+**************************/
+.showcase-2{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 352px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    
+}
+.showcase-2 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.txt-video-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: calc(-50%, -50%);
+}
+/**************************
+VIDEO WELCOME
+**************************/
+.showcase-welcome{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    
+}
+.showcase-welcome video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.txt-welcome{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: calc(-50%, -50%);
+}
+/**************************
+VIDEO WELCOME
+**************************/
+.showcase-matrix{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 140vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;  
+}
+.showcase-matrix video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.bg-matrix{
+    background-image: url('../img/bg-matrix.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.box-matrix{
+    position: absolute;
+    top: 55%;
+    left: 4%;
+    transform: calc(-50%, -50%);
+    z-index: 200;
+}
+.brand{
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+    height: 55px;
+}
+.logo-1-mat{
+    width: 80px;
+}
+.logo-2-mat{
+    width: 70px;
+}
+.logo-3-mat{
+    width: 60px;
+}
+.logo-4-mat{
+    width: 80px;
+}
+.logo-5-mat{
+    width: 90px;
+}
+.logo-6-mat{
+    width: 100px;
+}
+.content-matrix{
+    margin-top: 0.8rem;
+}
+.content-matrix h1{
+    font-size: 14px ;
+}
+.txt-large{
+    font-size: 12px !important;
+    margin-top: .3rem;
+}
+.txt-matrix{
+    position: relative;
+}
+.title-matrix{
+    position: absolute;
+    top: -3.5%;
+    left: 14%;
+}
 /* ENDS TRAINING VIEW */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
     .brands{
@@ -1017,6 +1191,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .logo-link img{
         width: 182px;
         height: 43px;
+    }
+    .box-matrix{
+        position: absolute;
+        top: 52%;
+        left: 15%;
+        transform: calc(-50%, -50%);
+        z-index: 200;
     }
 
 }
