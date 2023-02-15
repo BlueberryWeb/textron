@@ -1233,9 +1233,41 @@ VIDEO DE SHAREPOINTS
 }
 .sharepoints{
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 15%;
+    left: 0;
     width: 100%;
+}
+.container-points{
+    height: 60vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    z-index: 1000;
+    scrollbar-gutter: stable both-edges;
+}
+.container-points::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+}
+.container-points::-webkit-scrollbar-thumb{
+    background: rgba(67, 67, 67, 0.5);
+    border-radius: 20px;
+    
+}
+.container-points::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container-points::-webkit-scrollbar-thumb:active{
+    background-color: rgba(170, 170, 170, 0.1);
+    height: 20px;
+}
+.container-points::-webkit-scrollbar-track{
+    background: #e1e1e1;
+    border-radius: 20px;
+}
+.container-points::-webkit-scrollbar-track:hover,
+.container-points::-webkit-scrollbar-track:active{
+    background: #d4d4d4;
 }
 .sharepoint{
     border: 0.5px solid #FFFFFF;
@@ -1259,6 +1291,24 @@ VIDEO DE SHAREPOINTS
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 16px 12px;
+}
+.input-keyword{
+    width: 300px;
+    background: transparent;
+    height: 40px;
+    border-radius: 0;
+    border: 0.5px solid #fff;
+}
+.btn-search{
+    background-color: #599A30;
+    color: #fff;
+    border-radius: 100%;
+    border: none;
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    margin-left: -20px;
+    margin-top: -10px;
 }
 /* ENDS TRAINING VIEW */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
