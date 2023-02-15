@@ -1310,6 +1310,61 @@ VIDEO DE SHAREPOINTS
     margin-left: -20px;
     margin-top: -10px;
 }
+.btn-search:hover{
+    background-color: #599A30;
+    color: #fff;
+    border-radius: 100%;
+    border: none;
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+.btn-search:focus{
+    background-color: #599A30;
+    color: #fff;
+    border-radius: 100%;
+    border: none;
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+/**************************
+VIDEO DE KNOWLEDGE
+**************************/
+.showcase-knowledge{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    
+}
+.showcase-knowledge video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.txt-knowledge{
+    position: absolute;
+    top: 38%;
+    left: 33%;
+    transform: calc(-50%, -50%);
+    text-align: center;
+}
 /* ENDS TRAINING VIEW */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
     .brands{
@@ -1342,6 +1397,9 @@ VIDEO DE SHAREPOINTS
         left: 15%;
         transform: calc(-50%, -50%);
         z-index: 200;
+    }
+    .txt-knowledge{
+        left: 35%;
     }
 
 }
