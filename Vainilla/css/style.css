@@ -237,6 +237,9 @@ body{
 .bb-logo-welcome{
     width: 150px;
 }
+.bb-logo{
+    width: 320px;
+}
 .logo-1{
     width: 120px;
 }
@@ -1237,36 +1240,36 @@ VIDEO DE SHAREPOINTS
     left: 0;
     width: 100%;
 }
-.container-points{
+#container-points{
     height: 60vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
     z-index: 1000;
     scrollbar-gutter: stable both-edges;
 }
-.container-points::-webkit-scrollbar {
+#container-points::-webkit-scrollbar {
     width: 10px;     /* Tamaño del scroll en vertical */
     height: 10px;    /* Tamaño del scroll en horizontal */
 }
-.container-points::-webkit-scrollbar-thumb{
+#container-points::-webkit-scrollbar-thumb{
     background: rgba(67, 67, 67, 0.5);
     border-radius: 20px;
-    
+    height: 5px;
 }
-.container-points::-webkit-scrollbar-thumb:hover{
+#container-points::-webkit-scrollbar-thumb:hover{
     background: #b3b3b3;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-.container-points::-webkit-scrollbar-thumb:active{
+#container-points::-webkit-scrollbar-thumb:active{
     background-color: rgba(170, 170, 170, 0.1);
     height: 20px;
 }
-.container-points::-webkit-scrollbar-track{
+#container-points::-webkit-scrollbar-track{
     background: #e1e1e1;
     border-radius: 20px;
 }
-.container-points::-webkit-scrollbar-track:hover,
-.container-points::-webkit-scrollbar-track:active{
+#container-points::-webkit-scrollbar-track:hover,
+#container-points::-webkit-scrollbar-track:active{
     background: #d4d4d4;
 }
 .sharepoint{
