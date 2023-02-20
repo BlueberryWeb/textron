@@ -441,6 +441,9 @@ body{
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
+.cerrar{
+    transform: translateX(0);
+}
 input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -1367,6 +1370,38 @@ VIDEO DE KNOWLEDGE
     left: 33%;
     transform: calc(-50%, -50%);
     text-align: center;
+}
+/**************************
+VIDEO DEL FOOTER
+***************************/
+.showcase-footer{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 220px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #111;
+    color: #fff;
+    z-index: 2;  
+}
+.showcase-footer video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.txt-video-footer{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    left: 0;
+    transform: calc(-50%, -50%);
 }
 /* ENDS TRAINING VIEW */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
