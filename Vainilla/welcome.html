@@ -42,31 +42,31 @@
             <li>
                 <img src="img/logo-artic.png" alt="ARTIC CAT" class="img-fluid logo-artic"/>
             </li>
-            <li class="menu-login active-tit">
+            <li class="menu-login active-tit" onclick="cerrarMenu(this);">
                 <a href="#" >Home</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#" >Business Updates</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#">Success Stories</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#">Master Plan</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#">Training Plan</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#">Lessons Learned</a>
             </li>
-            <li class="border- menu-login">
+            <li class="border- menu-login" onclick="cerrarMenu(this);">
                 <a href="#">Sharepoints</a>
             </li>
-            <li class="menu-login">
+            <li class="menu-login" onclick="cerrarMenu(this);">
                 <a href="#">My Account</a>
             </li>
-            <li class="border- menu-login">
+            <li class="border- menu-login" >
                 <a href="#">Log Out</a>
             </li>
             <li class="footer-welcome">
@@ -168,6 +168,13 @@
         $('li.menu-login').click(function(){
             $('div#sidebarMenu').addClass("cerrar");
         });
+        function cerrarMenu(x){
+            sidemenu = document.getElementById("openSidebarMenu");
+            x.addEventListener("click", function(){
+                sidemenu.checked = false;
+            })
+        }
+       
     </script>
     <!-- LIBRERIA DE ANIMACIONES -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
