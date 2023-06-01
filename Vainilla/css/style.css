@@ -1117,6 +1117,7 @@ VIDEO WELCOME
     object-fit: cover;
     opacity: 0.8;
 }
+
 .bg-matrix{
     background-image: url('../img/bg-matrix.png');
     background-position: center;
@@ -1126,8 +1127,8 @@ VIDEO WELCOME
 }
 .box-matrix{
     position: absolute;
-    top: 55%;
-    left: 4%;
+    top: 20%;
+    left: 6%;
     transform: calc(-50%, -50%);
     z-index: 200;
 }
@@ -1404,7 +1405,7 @@ VIDEO DEL FOOTER
     transform: calc(-50%, -50%);
 }
 /* ENDS TRAINING VIEW */
-@media only screen and (min-width: 1600px) and (max-width: 2000px){
+@media only screen and (min-width: 2000px) and (max-width: 2500px){
     .brands{
         position: relative;
         width: 380px;
@@ -1437,9 +1438,31 @@ VIDEO DEL FOOTER
         z-index: 200;
     }
     .txt-knowledge{
-        left: 35%;
+        margin-right: 3rem;
     }
-
+    .showcase-values video{
+        object-fit: cover;
+    }
+    .values-additional-2{
+        display: none;
+    }
+    .values-additional{
+        margin-left: 5rem;
+    }
+    .txt-principles{
+        margin-left: 10rem;
+        margin-top: 13rem;
+    }
+    .txt-additional{
+        margin-top: 10rem;
+    }
+    .logo-isc{
+        margin-top: 18.5rem;
+        text-align: end;
+    }
+    .buttons-modules{
+        height: 500px;
+    }
 }
 
 
@@ -1471,7 +1494,15 @@ VIDEO DE ABOUT
 }
 .txt-about{
     position: absolute;
-    top: 30%;
+    top: 10%;
+    left: 0;
+    transform: calc(-50%, -50%);
+    text-align: start;
+    width: 100%;
+}
+.txt-menu{
+    position: absolute;
+    bottom: 10%;
     left: 0;
     transform: calc(-50%, -50%);
     text-align: start;
@@ -1489,18 +1520,20 @@ VIDEO DE ABOUT
 .values-icon{
     width: 60%;
 }
-.border-bottom-about{
-    border-bottom: 0.5px solid #FFFFFF;
+.bordes-vision{
+    border-left: 0.5px solid #FFFFFF;
+    border-right: 0.5px solid #FFFFFF;
 }
 .circle{
     border-radius: 50%;
     border: 1px solid #FFFFFF;
-    width: 30px;
+    width: 27px;
     text-align: center;
-    height: 30px;
+    height: 27px;
+    cursor: pointer;
 }
 .circle i{
-    margin-top: 6px;
+    font-size: 12px;
 }
 .edit{
     position: absolute;
@@ -1618,7 +1651,6 @@ VIDEO DE VALUES
     background: #111;
     color: #fff;
     z-index: 2;
-    
 }
 .showcase-values video{
     position: absolute;
@@ -1632,17 +1664,13 @@ VIDEO DE VALUES
 .values{
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 2%;
     left: 0;
     transform: calc(-50%, -50%);
 }
 .txt-values{
-    margin-top: 5rem;
-    left: 6%;
-    text-align: end;
-}
-.txt-values p{
-    font-size: 13px;
+    margin-top: 6rem;
+    text-align: start;
 }
 .txt-values h1{
     font-size: 25px;
@@ -1657,16 +1685,23 @@ VIDEO DE VALUES
     margin-top: 8rem;
     left: 3%;
     transform: calc(-50%, -50%);
-    text-align: end;
+    text-align: start;
+    position: relative;
 }
 .txt-additional p{
     font-size: 13px;
+}
+.line-additional{
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
 .txt-additional h1{
     font-size: 20px;
 }
 .txt-principles{
-    margin-top: 10rem;
+    margin-top: 3rem;
     text-align: start;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -1679,16 +1714,17 @@ VIDEO DE VALUES
     font-size: 13px;
 }
 .txt-principles h1{
-    font-size: 25px;
+    font-size: 20px;
 }
 .txt-strategic{
+    margin-top: 5rem;
     z-index: 100;
 }
 .txt-strategic-img{
     position: absolute;
-    width: 21%;
-    right: 20.3%;
-    top: 30%;
+    width: 23%;
+    right: 10%;
+    top: 40%;
     z-index: 1;
 }
 .txt-strategic h1{
@@ -1698,7 +1734,7 @@ VIDEO DE VALUES
     font-size: 13px;
 }
 .txt-strategic h5{
-    font-size: 18px;
+    font-size: 17px;
 }
 .txt-priority{
     margin-top: 16rem;
@@ -1744,6 +1780,7 @@ VIDEO DE ISC
 }
 .logo-isc{
     margin-top: 15.5rem;
+    text-align: center;
 }
 .title-modules{
     margin-left: 5rem;
